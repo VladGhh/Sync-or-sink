@@ -1,0 +1,766 @@
+fileFormatVersion: 2
+guid: 84b23b1df6c47a248a64620438658620
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SP_cat_front_right_ear
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1522
+        width: 200
+        height: 162
+      alignment: 9
+      pivot: {x: 0.64033747, y: 0.25505084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3fa4d3f5749f94ab86ebb86d2f49e7
+      internalID: -357258024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_cat_front_left_ear
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 1522
+        width: 203
+        height: 165
+      alignment: 9
+      pivot: {x: 0.40941346, y: 0.28296712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a59116564278f47bd21dd43f6c1fea
+      internalID: -2107323430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_cat_front_head
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1232
+        width: 328
+        height: 262
+      alignment: 9
+      pivot: {x: 0.50590146, y: 0.3744013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a035bf12a40b0147925a6a0a644be6b
+      internalID: -816780891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_cat_front_torso
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1026
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ac4e12c01183d408eb1b608a3c344b
+      internalID: -406703345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_cat_front_tail
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 990
+        width: 262
+        height: 181
+      alignment: 9
+      pivot: {x: 0.14102487, y: 0.6358501}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5585229a97e87498bdf29e91824528
+      internalID: 482535690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_cat_front_left_hand
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 674
+        width: 158
+        height: 281
+      alignment: 9
+      pivot: {x: 0.19045837, y: 0.8969522}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127e5682e04926b41a1d34e8d35ad9e8
+      internalID: 998861971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_cat_front_right_hand
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 667
+        width: 157
+        height: 282
+      alignment: 9
+      pivot: {x: 0.8606995, y: 0.9016299}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfd1a9ac321f65409c305df9ac6f3c6
+      internalID: -974937667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_cat_front_leg
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 384
+        width: 101
+        height: 204
+      alignment: 9
+      pivot: {x: 0.6620956, y: 0.8586309}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1bddb98547122489b7467717324e69
+      internalID: 1469404545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_bunny_front_torso
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 103
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f24f8918383b684fb04e4b2df3b6a00
+      internalID: -1715782529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_bunny_front_right_hand
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 4
+        width: 164
+        height: 280
+      alignment: 9
+      pivot: {x: 0.85981095, y: 0.8917803}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f147530c34fb2645ac65db1d6835195
+      internalID: -1674416463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_bunny_front_left_hand
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 2
+        width: 162
+        height: 284
+      alignment: 9
+      pivot: {x: 0.13626853, y: 0.9058421}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111b984dd3d0f064ab3e3563124f8d38
+      internalID: -1638254413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_bunny_front_head
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 310
+        width: 328
+        height: 269
+      alignment: 9
+      pivot: {x: 0.50822735, y: 0.34283346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d11ebb4a19527648af300e6401ff05f
+      internalID: -2033912257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_bunny_front_right_ear
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 1287
+        width: 181
+        height: 410
+      alignment: 9
+      pivot: {x: 0.7435185, y: 0.84664726}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb3e4a892ae1cc4696bfe0a06bd9f8f
+      internalID: 1729056643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_bunny_front_left_ear
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1281
+        width: 180
+        height: 416
+      alignment: 9
+      pivot: {x: 0.30510253, y: 0.8481343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5d7ebbe0123db41af34168fe808bed
+      internalID: 1733338879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_cat_side_head
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 941
+        width: 336
+        height: 292
+      alignment: 9
+      pivot: {x: 0.48125967, y: 0.2905211}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633e107b8a55e3b49bd0eac5d1ac3055
+      internalID: -1006534426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_cat_side_right_ear
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 671
+        width: 152
+        height: 179
+      alignment: 9
+      pivot: {x: 0.69164157, y: 0.24834864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060dad2488d932144aff1bc4a3ff3f14
+      internalID: -494211642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_cat_side_left_ear
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 732
+        width: 90
+        height: 129
+      alignment: 9
+      pivot: {x: 0.54997355, y: 0.24896903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692ad3627ff73dc479c31a3ab16807ea
+      internalID: -2132203711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_cat_side_tail
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 404
+        width: 264
+        height: 215
+      alignment: 9
+      pivot: {x: 0.85935074, y: 0.35960224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677823058826a4246b5f1fbaa626a9e9
+      internalID: 180053442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_cat_side_right_hand
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 142
+        width: 222
+        height: 211
+      alignment: 9
+      pivot: {x: 0.8593508, y: 0.8729754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295b0768985a8da47acfc4eacd641765
+      internalID: -550226692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_cat_side_leg
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 148
+        width: 107
+        height: 159
+      alignment: 9
+      pivot: {x: 0.45969912, y: 0.78476834}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d57f103319b68f41abd5b3358b00387
+      internalID: -831530195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_cat_side_torso
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 36
+        width: 206
+        height: 174
+      alignment: 9
+      pivot: {x: 0.5261663, y: 0.4628256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e0853b5f58a53469dd1948ecafc04e
+      internalID: 1606996368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_bunny_side_right_hand
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 44
+        width: 242
+        height: 221
+      alignment: 9
+      pivot: {x: 0.8920192, y: 0.8560988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d5d21213adf7e43bd9b44b3d64d860
+      internalID: -1301762569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_bunny_side_left_hand
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 305
+        width: 255
+        height: 187
+      alignment: 9
+      pivot: {x: 0.84244025, y: 0.8747242}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17f88646c1ce964fa8c5d0fb7737f67
+      internalID: -587919022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_cat_side_left_hand
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 256
+        width: 252
+        height: 192
+      alignment: 9
+      pivot: {x: 0.85079473, y: 0.8649656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c668a9f740336c84899336d3c09b1a82
+      internalID: 2005645964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_bunny_side_torso
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 623
+        width: 283
+        height: 200
+      alignment: 9
+      pivot: {x: 0.6828501, y: 0.53773165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f1ffe73752a564f9e46b5b3d05238a
+      internalID: 766324810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_bunny_side_ear
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 930
+        width: 200
+        height: 376
+      alignment: 9
+      pivot: {x: 0.71022034, y: 0.84119207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45dd459f671a33244b521181f4288830
+      internalID: 302043241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_bunny_side_head
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 1354
+        width: 339
+        height: 296
+      alignment: 9
+      pivot: {x: 0.4618388, y: 0.32518047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6baf63b3ee8c794a98880badf72c1c7
+      internalID: -680141339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SP_bunny_front_head: -2033912257
+      SP_bunny_front_left_ear: 1733338879
+      SP_bunny_front_left_hand: -1638254413
+      SP_bunny_front_right_ear: 1729056643
+      SP_bunny_front_right_hand: -1674416463
+      SP_bunny_front_torso: -1715782529
+      SP_bunny_side_ear: 302043241
+      SP_bunny_side_head: -680141339
+      SP_bunny_side_left_han: -1301762569
+      SP_bunny_side_left_hand: -587919022
+      SP_bunny_side_right_hand: -1301762569
+      SP_bunny_side_torso: 766324810
+      SP_cat_front_head: -816780891
+      SP_cat_front_left_ear: -2107323430
+      SP_cat_front_left_hand: 998861971
+      SP_cat_front_leg: 1469404545
+      SP_cat_front_right_ear: -357258024
+      SP_cat_front_right_hand: -974937667
+      SP_cat_front_tail: 482535690
+      SP_cat_front_torso: -406703345
+      SP_cat_side: 180053442
+      SP_cat_side_head: -1006534426
+      SP_cat_side_left_ear: -2132203711
+      SP_cat_side_left_hand: 2005645964
+      SP_cat_side_leg: -831530195
+      SP_cat_side_right_ear: -494211642
+      SP_cat_side_right_hand: -550226692
+      SP_cat_side_tail: 180053442
+      SP_cat_side_torso: 1606996368
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
