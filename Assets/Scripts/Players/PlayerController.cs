@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 10f;
     public float airControl = 5f;
     public float interactRange = 1f;
+    public float pushSpeed = 4f;            // cat de repede merge cand impinge cutia
+    public float pushCheckDistance = 0.7f;  // cat de departe se uita dupa cutie
     public Animator animator;
 
     private Rigidbody2D rb;
@@ -19,6 +21,7 @@ public class PlayerController : MonoBehaviour
 
     private bool isGrounded;
     private bool canJump = true;
+    private bool isPushing;
     private float moveHorizontal;
 
     void Start()
@@ -51,6 +54,9 @@ public class PlayerController : MonoBehaviour
         {
             moveHorizontal = Input.GetAxisRaw("Horizontal2");
         }
+
+        isPushing = IsPushingBox();
+        animator.SetBool("IsPushing", isPushing);
 
         if (moveHorizontal > 0)
         {
@@ -98,7 +104,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        float targetSpeed = moveHorizontal * moveSpeed;
+        float targetSpeed = moveHorizontal * (isPushing ? pushSpeed : moveSpeed);
 
         if (isGrounded)
         {
@@ -138,6 +144,14 @@ public class PlayerController : MonoBehaviour
             }
         }
         return false;
+    }
+
+    // true daca merge fix intr-o cutie
+    private bool IsPushingBox()
+    {
+        if (moveHorizontal == 0) return false;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(moveHorizontal, 0f), pushCheckDistance, LayerMask.GetMask("Ground"));
+        return hit.collider != null && hit.collider.GetComponent<Box>() != null;
     }
 
     private void Jump()
