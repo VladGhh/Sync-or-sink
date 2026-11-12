@@ -5,7 +5,7 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
     // Start is called before the first frame update
-    public void Interact()
+    public virtual void Interact(PlayerController player)
     {
         Debug.Log("Interacting with " + gameObject.name);
         // Add your interact logic here

@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius = 0.5f;
     public LayerMask whatIsGround;
 
+    public bool isCarryingItem = false;
+    
     private bool isGrounded;
     private bool canJump = true;
     private bool isPushing;
@@ -85,25 +87,46 @@ public class PlayerController : MonoBehaviour
         {
             Jump();
         }
-
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, interactRange);
-        foreach (Collider2D collider in colliders)
+        
+        if (isCarryingItem && ((isPlayer1 && Input.GetKeyDown(KeyCode.E)) || (!isPlayer1 && Input.GetKeyDown(KeyCode.RightShift))))
         {
-            Interactable interactable = collider.GetComponent<Interactable>();
-            if (interactable != null)
+            PickableItem heldItem = GetComponentInChildren<PickableItem>();
+            if (heldItem != null)
             {
-                interactable.ShowPrompt();
-
-                if ((isPlayer1 && Input.GetKeyDown(KeyCode.E)) || (!isPlayer1 && Input.GetKeyDown(KeyCode.RightShift)))
+                heldItem.Drop();
+            }
+        }
+        else
+        {
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, interactRange);
+            foreach (Collider2D collider in colliders)
+            {
+                Interactable interactable = collider.GetComponent<Interactable>();
+                if (interactable != null)
                 {
-                    interactable.Interact();
+                    interactable.ShowPrompt();
+
+                    if ((isPlayer1 && Input.GetKeyDown(KeyCode.E)) || (!isPlayer1 && Input.GetKeyDown(KeyCode.RightShift)))
+                    {
+                        interactable.Interact(this);
+                        break;
+                    }
                 }
             }
         }
+        
     }
 
     void FixedUpdate()
     {
+        //daca care un item si incearca sa impinga o cutie, sta pe loc
+        if (isCarryingItem && isPushing)
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            return;
+        }
+        
+        
         float targetSpeed = moveHorizontal * (isPushing ? pushSpeed : moveSpeed);
 
         if (isGrounded)
