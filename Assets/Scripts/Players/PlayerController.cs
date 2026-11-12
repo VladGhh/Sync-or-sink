@@ -9,19 +9,20 @@ public class PlayerController : MonoBehaviour
     public float airControl = 5f;
     public float interactRange = 1f;
     public float pushSpeed = 4f;            // cat de repede merge cand impinge cutia
-    public float pushCheckDistance = 0.7f;  // cat de departe se uita dupa cutie
+    public float pushCheckDistance = .7f;  // cat de departe se uita dupa cutie
     public Animator animator;
 
     private Rigidbody2D rb;
     private bool isPlayer1;
 
     public Transform groundCheck;
-    public float groundCheckRadius = 0.5f;
+    public float groundCheckRadius = 0.05f;
     public LayerMask whatIsGround;
 
     public bool isCarryingItem = false;
     
     private bool isGrounded;
+    private bool isBoxInFront;
     private bool canJump = true;
     private bool isPushing;
     private float moveHorizontal;
@@ -56,16 +57,16 @@ public class PlayerController : MonoBehaviour
         {
             moveHorizontal = Input.GetAxisRaw("Horizontal2");
         }
-
-        isPushing = IsPushingBox();
+        isBoxInFront = IsBoxInFront();
+        isPushing = IsBoxInFront()&&isGrounded;
         animator.SetBool("IsPushing", isPushing);
 
-        if (moveHorizontal > 0)
+        if (moveHorizontal > 0 )
         {
             animator.SetBool("IsWalking", true);
             transform.localScale = new Vector3(.5f, .5f, 1f);
         }
-        else if (moveHorizontal < 0)
+        else if (moveHorizontal < 0 )
         {
             animator.SetBool("IsWalking", true);
             transform.localScale = new Vector3(-0.5f, .5f, 1f);
@@ -125,9 +126,15 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
             return;
         }
-        
-        
+       
+
         float targetSpeed = moveHorizontal * (isPushing ? pushSpeed : moveSpeed);
+
+        //daca e in aer nu poate sa impinga cutii
+        if (!isGrounded && isBoxInFront)
+        {
+            targetSpeed = 0f;
+        }
 
         if (isGrounded)
         {
@@ -169,11 +176,11 @@ public class PlayerController : MonoBehaviour
         return false;
     }
 
-    // true daca merge fix intr-o cutie
-    private bool IsPushingBox()
+    // true daca are o cutie in fata
+    private bool IsBoxInFront()
     {
-        if (moveHorizontal == 0) return false;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(moveHorizontal, 0f), pushCheckDistance, LayerMask.GetMask("Ground"));
+        if ( moveHorizontal == 0) return false;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(moveHorizontal, 0f), pushCheckDistance, LayerMask.GetMask("Movable"));
         return hit.collider != null && hit.collider.GetComponent<Box>() != null;
     }
 

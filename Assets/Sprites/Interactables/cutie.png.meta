@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 1d29b8fc43a4baf4fbfdafee07632fbb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 253081592646932204
+    second: cutie_0
+  - first:
+      213: 7034611521832930056
+    second: cutie_1
+  - first:
+      213: -5712010799298636769
+    second: cutie_2
+  - first:
+      213: 1950175348076671076
+    second: cutie_3
+  - first:
+      213: 6305736490801575233
+    second: cutie_4
+  - first:
+      213: -7919216767854933313
+    second: cutie_5
+  - first:
+      213: -2854487842511664540
+    second: cutie_6
+  - first:
+      213: -2642433889347321332
+    second: cutie_7
+  - first:
+      213: -3954572966194753468
+    second: cutie_8
+  - first:
+      213: 785027445438024535
+    second: cutie_9
+  - first:
+      213: 460815962389726700
+    second: cutie_10
+  - first:
+      213: 4054111977884267414
+    second: cutie_11
+  - first:
+      213: -8670667937765464836
+    second: cutie_12
+  - first:
+      213: 3270135893901014159
+    second: cutie_13
+  - first:
+      213: -3652646352405932315
+    second: cutie_14
+  - first:
+      213: -8708941193980199332
+    second: cutie_15
+  - first:
+      213: 4177489665672293661
+    second: cutie_16
+  - first:
+      213: -3175750719172058598
+    second: cutie_17
+  - first:
+      213: -9143732172386894727
+    second: cutie_18
+  - first:
+      213: -1440134060428462539
+    second: cutie_19
+  - first:
+      213: -3164344976660355756
+    second: cutie_20
+  - first:
+      213: -4255411232172116138
+    second: cutie_21
+  - first:
+      213: 40529232654135717
+    second: cutie_22
+  - first:
+      213: 4052182708620291970
+    second: cutie_23
+  - first:
+      213: -6994388331739513268
+    second: cutie_24
+  - first:
+      213: -1127682292015304094
+    second: cutie_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cutie_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 153
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce619ec1e50238300800000000000000
+      internalID: 253081592646932204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 127
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80bc8bb78e5ff9160800000000000000
+      internalID: 7034611521832930056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 153
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f141c9a017cdab0b0800000000000000
+      internalID: -5712010799298636769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_3
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 133
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46075d7852a601b10800000000000000
+      internalID: 1950175348076671076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_4
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 139
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145327ddde9728750800000000000000
+      internalID: 6305736490801575233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_5
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 45
+        width: 136
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fba80b4be4a491290800000000000000
+      internalID: -7919216767854933313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_6
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 108
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46acb635e62d268d0800000000000000
+      internalID: -2854487842511664540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_7
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 106
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02cffab060345bd0800000000000000
+      internalID: -2642433889347321332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 101
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4405997e6d88e19c0800000000000000
+      internalID: -3954572966194753468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 101
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b04486d4af4ea00800000000000000
+      internalID: 785027445438024535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_10
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 76
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5c1112da5256600800000000000000
+      internalID: 460815962389726700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_11
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 76
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693b2714d59134830800000000000000
+      internalID: 4054111977884267414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_12
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 77
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf4ee1423799ba780800000000000000
+      internalID: -8670667937765464836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_13
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 75
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f847933054bd16d20800000000000000
+      internalID: 3270135893901014159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_14
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 50
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6d7babe713f4dc0800000000000000
+      internalID: -3652646352405932315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_15
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 43
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5e3b034020a32780800000000000000
+      internalID: -8708941193980199332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_16
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 52
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d2347b7bc69f930800000000000000
+      internalID: 4177489665672293661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_17
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 39
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12ee88fb877de3d0800000000000000
+      internalID: -3175750719172058598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_18
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 45
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c7197e800fa1180800000000000000
+      internalID: -9143732172386894727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_19
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 24
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5367833c3bd930ce0800000000000000
+      internalID: -1440134060428462539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_20
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 15
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4552e57520df514d0800000000000000
+      internalID: -3164344976660355756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_21
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 15
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6577c2dc70eb1f4c0800000000000000
+      internalID: -4255411232172116138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 28
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a17e535f1dff8000800000000000000
+      internalID: 40529232654135717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_23
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 29
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28fea4044be3c3830800000000000000
+      internalID: 4052182708620291970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_24
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 19
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e7781ced0feee90800000000000000
+      internalID: -6994388331739513268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutie_25
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 22
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 262fdec1eeaa950f0800000000000000
+      internalID: -1127682292015304094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cutie_0: 253081592646932204
+      cutie_1: 7034611521832930056
+      cutie_10: 460815962389726700
+      cutie_11: 4054111977884267414
+      cutie_12: -8670667937765464836
+      cutie_13: 3270135893901014159
+      cutie_14: -3652646352405932315
+      cutie_15: -8708941193980199332
+      cutie_16: 4177489665672293661
+      cutie_17: -3175750719172058598
+      cutie_18: -9143732172386894727
+      cutie_19: -1440134060428462539
+      cutie_2: -5712010799298636769
+      cutie_20: -3164344976660355756
+      cutie_21: -4255411232172116138
+      cutie_22: 40529232654135717
+      cutie_23: 4052182708620291970
+      cutie_24: -6994388331739513268
+      cutie_25: -1127682292015304094
+      cutie_3: 1950175348076671076
+      cutie_4: 6305736490801575233
+      cutie_5: -7919216767854933313
+      cutie_6: -2854487842511664540
+      cutie_7: -2642433889347321332
+      cutie_8: -3954572966194753468
+      cutie_9: 785027445438024535
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
