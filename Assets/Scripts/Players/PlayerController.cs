@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
     public bool isCarryingItem = false;
     
-    private bool isGrounded;
+    public bool isGrounded;
     private bool isBoxInFront;
     private bool canJump = true;
     private bool isPushing;
@@ -180,7 +180,7 @@ public class PlayerController : MonoBehaviour
     private bool IsBoxInFront()
     {
         if ( moveHorizontal == 0) return false;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(moveHorizontal, 0f), pushCheckDistance, LayerMask.GetMask("Movable"));
+        RaycastHit2D hit = Physics2D.Raycast(groundCheck.position, new Vector2(moveHorizontal, 0f), pushCheckDistance, LayerMask.GetMask("Movable"));
         return hit.collider != null && hit.collider.GetComponent<Box>() != null;
     }
 
