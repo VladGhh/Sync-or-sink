@@ -8,11 +8,11 @@ public class Interactable : MonoBehaviour
     public virtual void Interact(PlayerController player)
     {
         Debug.Log("Interacting with " + gameObject.name);
-        // Add your interact logic here
+       
     }
     public void ShowPrompt()
     {
         Debug.Log("Interacting with " + gameObject.name);
-        // Add your interact logic here
+        
     }
 }

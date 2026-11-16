@@ -13,14 +13,18 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
 
     private Rigidbody2D rb;
-    private bool isPlayer1;
+    public bool isPlayer1;
 
     public Transform groundCheck;
     public float groundCheckRadius = 0.05f;
     public LayerMask whatIsGround;
 
     public bool isCarryingItem = false;
-    
+    public Vector2 platformVelocity = Vector2.zero;
+
+    //pentru barca
+    public bool isRowing = false;
+   
     public bool isGrounded;
     private bool isBoxInFront;
     private bool canJump = true;
@@ -57,16 +61,38 @@ public class PlayerController : MonoBehaviour
         {
             moveHorizontal = Input.GetAxisRaw("Horizontal2");
         }
+        if (isRowing)//vasleste din barca,ii opresc micsarile playerului
+        {
+            animator.SetBool("IsWalking", false);
+            animator.SetBool("IsPushing", false);
+            animator.SetBool("IsJumping", false);
+            animator.SetBool("IsFalling", false);
+
+            if ((isPlayer1 && Input.GetKeyDown(KeyCode.E)) || (!isPlayer1 && Input.GetKeyDown(KeyCode.RightShift)))
+            {
+                Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, interactRange);
+                foreach (Collider2D collider in colliders)
+                {
+                    Interactable interactable = collider.GetComponent<Interactable>();
+                    if (interactable != null)
+                    {
+                        interactable.Interact(this);
+                        break;
+                    }
+                }
+            }
+            return;
+        }
         isBoxInFront = IsBoxInFront();
-        isPushing = IsBoxInFront()&&isGrounded;
+        isPushing = IsBoxInFront() && isGrounded;
         animator.SetBool("IsPushing", isPushing);
 
-        if (moveHorizontal > 0 )
+        if (moveHorizontal > 0)
         {
             animator.SetBool("IsWalking", true);
             transform.localScale = new Vector3(.5f, .5f, 1f);
         }
-        else if (moveHorizontal < 0 )
+        else if (moveHorizontal < 0)
         {
             animator.SetBool("IsWalking", true);
             transform.localScale = new Vector3(-0.5f, .5f, 1f);
@@ -88,7 +114,7 @@ public class PlayerController : MonoBehaviour
         {
             Jump();
         }
-        
+
         if (isCarryingItem && ((isPlayer1 && Input.GetKeyDown(KeyCode.E)) || (!isPlayer1 && Input.GetKeyDown(KeyCode.RightShift))))
         {
             PickableItem heldItem = GetComponentInChildren<PickableItem>();
@@ -115,18 +141,22 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-        
     }
 
     void FixedUpdate()
     {
-        //daca care un item si incearca sa impinga o cutie, sta pe loc
+        //daca care un item si incearca sa impinga o cutie, sta pe loc (dar se misca cu platforma de sub el)
         if (isCarryingItem && isPushing)
         {
-            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(platformVelocity.x, rb.linearVelocity.y);
             return;
         }
-       
+        if (isRowing)
+        {
+            // Cat timp vasleste, playerul are viteza barcii
+            rb.linearVelocity = new Vector2(platformVelocity.x, rb.linearVelocity.y);
+            return;
+        }
 
         float targetSpeed = moveHorizontal * (isPushing ? pushSpeed : moveSpeed);
 
@@ -138,7 +168,7 @@ public class PlayerController : MonoBehaviour
 
         if (isGrounded)
         {
-            rb.linearVelocity = new Vector2(targetSpeed, rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(targetSpeed + platformVelocity.x, rb.linearVelocity.y);
         }
         else
         {
@@ -146,15 +176,18 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = new Vector2(newX, rb.linearVelocity.y);
         }
 
-        if (rb.linearVelocity.y < -0.01f && !animator.GetBool("IsWalking"))
+        if (!isGrounded)
         {
-            animator.SetBool("IsJumping", false);
-            animator.SetBool("IsFalling", true);
-        }
-        else if (rb.linearVelocity.y > 0.01f && !animator.GetBool("IsWalking"))
-        {
-            animator.SetBool("IsFalling", false);
-            animator.SetBool("IsJumping", true);
+            if (rb.linearVelocity.y < -0.1f)
+            {
+                animator.SetBool("IsJumping", false);
+                animator.SetBool("IsFalling", true);
+            }
+            else if (rb.linearVelocity.y > 0.1f)
+            {
+                animator.SetBool("IsFalling", false);
+                animator.SetBool("IsJumping", true);
+            }
         }
         else
         {
@@ -179,7 +212,7 @@ public class PlayerController : MonoBehaviour
     // true daca are o cutie in fata
     private bool IsBoxInFront()
     {
-        if ( moveHorizontal == 0) return false;
+        if (moveHorizontal == 0) return false;
         RaycastHit2D hit = Physics2D.Raycast(groundCheck.position, new Vector2(moveHorizontal, 0f), pushCheckDistance, LayerMask.GetMask("Movable"));
         return hit.collider != null && hit.collider.GetComponent<Box>() != null;
     }
