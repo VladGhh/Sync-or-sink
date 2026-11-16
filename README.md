@@ -14,6 +14,7 @@ Jocul este destinat exclusiv a doi jucători care controlează două personaje 2
 | Oprea Alexandra Gabriela | Level Designer |
 | Radu-Teodor Prosie | Programmer |
 | Șoltuzu Emanuel | Programmer |
+| Ilie Eduard | Level designer |
 | Manoloiu Ana Maria  | Artist 2D / Animator |
 | Gherghel Nicusor Vlad | Game Lead | 
 
