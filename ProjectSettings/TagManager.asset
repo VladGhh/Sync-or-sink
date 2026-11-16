@@ -12,11 +12,11 @@ TagManager:
   - Ground
   - Water
   - UI
-  - Player
+  - Players
   - Item
   - Socket
   - Movable
-  - 
+  - Lock
   - FallTrigger
   - 
   - 
