@@ -131,7 +131,7 @@ public class PlayerController : MonoBehaviour
                 Interactable interactable = collider.GetComponent<Interactable>();
                 if (interactable != null)
                 {
-                    interactable.ShowPrompt();
+                    interactable.ShowPrompt(isPlayer1);
 
                     if ((isPlayer1 && Input.GetKeyDown(KeyCode.E)) || (!isPlayer1 && Input.GetKeyDown(KeyCode.RightShift)))
                     {
